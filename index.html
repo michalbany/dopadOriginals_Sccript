@@ -70,7 +70,23 @@
             <h2>Scénář</h2>
 
             <p class="t">Scéna 01 - Ink. Kavárna - slunečný den</p>
-            <p class="n">hello</p>
+            <p class="n">Kamera sleduje klidné ráno v kavárně, několik lidí u stolu, jak popíjí kávu nebo procují na počítači. Jiní listují novinami nebo si povídají.</p>
+            <p class="n">Sledujeme Garyho jak čistí kávovar. Když v tu dveře se otevřou a kamera sleduje chůzi mladé slečny až k pultu.</p>
+            <p class="r">Mladá slečna (s úsměvem, ale trochu netrpělivě): "Dobré ráno, mohla bych cappuccino, prosím?"</p>
+            <p class="r">Gary (trochu nesměle a koktavě): "Do-Dobré ráno. Samozřejmě, hned vám ho udělám."</p>
+            <p class="n">Gary začne připravovat kávu. Přemýšlí, jak navázat rozhovor.</p>
+            <p class="r">Gary (s pokusem o vtípek): "Cappuccino, to je káva, která potřebuje svůj osobní prostor, kvůli té pěně, viďte?"</p>
+            <p class="n">Víš, proč si káva nikdy nestěžuje? Protože je příliš filtrovaná!</p>
+            <p class="r">Mladá slečna (zmateně): "Cože? No... jo... asi."</p>
+            <p class="n">Slečna zakroutí hlavou, vezme kávu a odejde.</p>
+            <p class="n">Je slyšet smích zaměstnance, který celou situaci sledoval.</p>
+            <p class="r">MUŽSKÝ ZAMĚSTNANEC (POSMĚŠNĚ POPLÁCÁ GARYHO PO ZÁDECH): "Gary, pozor, aby na tebe holky nestály frontu po takových vtipech."</p>
+            <p class="n">Gary zčervená, zklopí oči a znovu se ponoří do práce, snaží se ignorovat posměšky kolegy.</p>
+            <p class="r">Gary (sklesle, bez reakce): "Děkuju za radu."</p>
+
+
+
+
             <p class="n">Záběr se přesune do menší místnosti se zelenými stěnami a starým nábytkem. Gary sedí na pohovce naproti Dr. Meyerovi.</p>
             <p class="r">Gary (váhavě): Prostě mám pocit, že mě nikdo nerozumí. Ano, zákazníci mě mají docela rádi, ale kolegové... je to složité.</p>
             <p class="r">Dr. Meyer (pozorně): Víte, Gary, často si lidé vytvářejí obranné mechanismy kvůli svým vlastním nejistotám. Je důležité nenechat je ovlivnit vaše vlastní vnímání sebe sama.</p>
@@ -113,6 +129,8 @@
         
         </div>
     </div>
+    <p class="t">Poznamky:</p>
+    <p class="r">Do kavárny chodi zena, která se Garymu líbí.</p>
 
     <script>
    var elements = document.querySelectorAll('.script .r');
@@ -130,6 +148,10 @@
                 firstWordSpan.style.backgroundColor = 'var(--yellow)';
             } else if (text[0].includes('DR. MEYER') || text[0].includes('Dr. Meyer')) {
                 firstWordSpan.style.backgroundColor = 'var(--orange)';
+            } else if (text[0].includes("Mladá slečna")) {
+                firstWordSpan.style.backgroundColor = 'var(--pink)';
+            } else if (text[0].includes("Mužský zaměstnanec")) {
+                firstWordSpan.style.backgroundColor = 'var(--green)';
             }
         }
     });
