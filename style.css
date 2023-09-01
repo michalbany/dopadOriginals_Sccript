@@ -1,0 +1,75 @@
+:root{
+    /* primary colors */
+    --purple: #645BFF;
+    --lightpurple: #e3e3fd;
+    --orange: #FF8966;
+    --yellow: #FFC551;
+
+    /* black & white */
+    --gray: #e9e9e9;
+    --black: #111111;
+    --white: #f3f3f3;
+
+    /* shades of black */
+    --softblack: #4a4a4a;
+    --softerblack: #6b6b6b;
+    --lightblack: #b4b4b4;
+    --ultralightblack: #d1d1d1;
+
+    /* alert colors */
+    --red: #EF0025;
+    --lightred: #ff5d75;
+    --green: #26A653;
+
+    /* hover colors */
+    --purpleH: #4d46e0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.title {
+    margin: 20px;
+    background-color: var(--lightpurple);
+    padding: 20px;
+}
+
+.grid-col {
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    justify-content: space-evenly;
+    grid-gap: 40px;
+}
+
+
+.script {
+    border: 2px solid var(--purple);
+    padding: 20px;
+}
+
+.structure {
+    padding: 20px;
+    background-color: var(--lightpurple);
+}
+
+
+.t {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.n {
+    color: var(--softblack);
+    font-style: italic;
+}
+
+.first-word {
+    font-weight: bold;
+    text-transform: uppercase;
+}
